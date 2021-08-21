@@ -19,6 +19,7 @@ memoryCost.addEventListener('click', function(){
 const storage256gb = document.getElementById('storage-256gb');
 storage256gb.addEventListener('click', function(){
     storageCost.innerText = 0;
+    updateTotal();
 })
 
 const storage512gb = document.getElementById('storage-512gb');
@@ -62,7 +63,7 @@ bestPrice.addEventListener('click', function(){
 
 const totalPrice = document.getElementById('total');
 totalPrice.addEventListener('click', function(){
-    // console.log('best')
+    updateTotal();
 })
 
 function updateTotal(){

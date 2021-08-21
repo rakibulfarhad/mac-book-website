@@ -7,6 +7,12 @@
     <title>Mac Book Pro</title>
     <!-- Tailwindcss and Fonts -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        td{
+            border: 1px solid lightgray;
+            padding: 0 2px;
+        }
+    </style>
 
 </head>
 <body>
@@ -40,7 +46,7 @@
                     hover:shadow-lg rounded mx-4 my-8">Friday, Aug 21 Delivery charge $20</button>
 
 
-                    <table>
+                    <table class="table-auto">
                         <tbody>
                             <tr>
                                 <td>Best Price</td>
@@ -64,16 +70,16 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="">Add Promo Code</p>
-                    <input type="text" class="checkout-promo-code-input" placeholder="Enter promo code" value="">
-                    <button>Apply</button>
+                    <p class="my-3">Add Promo Code</p>
+                    <input type="text" class="border border-gray-300" placeholder="Enter promo code" value="">
+                    <button id="" class="p-1 border border-gray-300 shadow hover:shadow-lg rounded">Apply</button>
                 </div>
                 
             </div>
 
         </div>
         <div>
-            <h class="text-3xl font-medium mb-5 text-center">Total: $<span id="">0</span></h1>
+            <h class="text-3xl font-medium mb-5 text-center">Total: $<span id="net-total">0</span></h1>
         </div>
     </main>
     <script src="js/app.js"></script>
